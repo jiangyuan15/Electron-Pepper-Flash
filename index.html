@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="./desing.css" rel="stylesheet" type="text/css" integrity="sha256-VpXUVejToIT93xua30SQC3Q9BIoz1kSHBWVtaaPixII=" crossorigin="anonymous">
+
+    <title>Save Flash Players</title>
+  </head>
+  <body>
+    <webview id="foo" class="webContent" src = "https://www.thepcmanwebsite.com/media/pacman_flash/" plugins allowpopups>
+    <div class = "indicator"></div>
+    </webview>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
